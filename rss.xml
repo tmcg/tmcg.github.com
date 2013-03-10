@@ -14,7 +14,7 @@ layout: nil
         <item>
                 <title>{{ post.title }}</title>
                 <description>{{ post.content | xml_escape }}</description>
-                <author>{{ site.author.email }}</author>
+                <author>{{ site.author.name }}</author>
                 <link>{{ site.production_url }}{{ post.url }}</link>
                 <guid isPermaLink="true">{{ site.production_url }}{{ post.url }}</guid>
                 <pubDate>{{ post.date | date_to_xmlschema }}</pubDate>
