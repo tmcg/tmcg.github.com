@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div class="row">
-  <div class="span8">All Posts</div>
+  <div class="span8"></div>
 
   {% for post in site.posts %}
     <div class="span6"><span>{{ post.date | date_to_long_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a> </div>

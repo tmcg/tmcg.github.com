@@ -1,7 +1,9 @@
 title: Tony McGee
+production_url: http://www.tonymcgee.net
 
 author:
   name: Tony McGee
+  email: tmcgee.au@gmail.com (Tony McGee)
 
 exclude: _templates/
 server: true

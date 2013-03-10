@@ -1,29 +1,25 @@
 ---
 layout: nil
-title : RSS Feed
 ---
-
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
 <channel>
-        <title>{{ site.name }}</title>
-        <description>{{ site.title }}</description>
-        <link>{{ site.url }}{{ site.rss_path }}</link>
-        <link>{{ site.url }}</link>
+        <title>Tony McGee's Blog</title>
+        <description>Musings on Software and Data</description>
+        <link>{{ site.production_url }}</link>
         <lastBuildDate>{{ site.time | date_to_xmlschema }}</lastBuildDate>
         <pubDate>{{ site.time | date_to_xmlschema }}</pubDate>
-        <ttl>1800</ttl>
-
-{% for post in site.posts %}
+        <ttl>1440</ttl>
+    {% for post in site.posts %}
         <item>
                 <title>{{ post.title }}</title>
                 <description>{{ post.content | xml_escape }}</description>
+                <author>{{ site.author.email }}</author>
                 <link>{{ site.production_url }}{{ post.url }}</link>
-                <guid isPermaLink="true">{{ site.production_url }}{{ post.id }}</guid>
+                <guid isPermaLink="true">{{ site.production_url }}{{ post.url }}</guid>
                 <pubDate>{{ post.date | date_to_xmlschema }}</pubDate>
         </item>
-{% endfor %}
-
+    {% endfor %}
 </channel>
 </rss>
 
