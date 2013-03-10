@@ -1,0 +1,23 @@
+
+body {
+  padding-top: 70px;
+  padding-bottom: 35px;
+}
+
+footer {
+  padding-top: 30px;
+}
+
+.nav li {
+  font-size: 13px;
+}
+
+.container {
+  margin-left: 30px;
+}
+
+.container-narrow {
+  margin: 0 30px; 0 auto;
+  max-width: 960px;
+}
+
