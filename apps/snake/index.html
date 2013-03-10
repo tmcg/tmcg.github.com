@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Snake</title>
+<link rel="stylesheet" type="text/css" href="/apps/snake/snake.css">
+<script type="text/javascript" src="/assets/js/jquery.min.js"></script>
+<script type="text/javascript" src="/assets/js/jquery-timer.js"></script>
+<script type="text/javascript" src="/apps/snake/snake.js"></script>
+</head>
+<body>
+<div id="snakeboardHolder">
+    <h1>Snake</h1>
+    <h3>Press SPACE to start/pause, M to toggle music</h3>
+    <canvas id="snakeboard" width="600px" height="600px">HTML5 Canvas element not supported!</canvas>
+    <div id="snakestatus"></div><br>
+    <div id="attribution">Audio: <a href="http://www.artistserver.com/artist/song.cfm/a/10878/tid/12129/jdvoid">Kiss the Bliss Goodbye</a> - jdvoid </div>
+</div>
+<script>
+    $(document).ready(function() { 
+        var board = new SnakeBoard("snakeboard"); 
+        board.startGame();
+    });
+</script>
+</body
+</html>

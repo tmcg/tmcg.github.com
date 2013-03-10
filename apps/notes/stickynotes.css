@@ -1,0 +1,66 @@
+﻿
+body {
+    height: 100%;
+    background-color: #4D70DB; 
+}
+
+#sticky-notepad-tray {
+    width: 120px;
+    text-align: center;
+    border: 2px solid;
+    border-color: #000000;
+    background-color: #000000;
+}
+
+#trash-can {
+    position:absolute;
+    bottom: 0;
+}
+
+.sticky-wall { 
+    display: block;
+    position: absolute;
+    padding: 0 10 10 10;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 90%;
+    color: #FFFFFF; 
+    font-family: 'Comic Sans MS','Arial','Sans-Serif'; 
+}
+
+.sticky-note {
+    position:absolute;
+    padding: 0.5em;
+    border: 1px solid;
+    width: 200px;
+    height: 200px;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    box-shadow: 4px 4px 4px rgba(0,0,0,0.4);
+}
+
+.sticky-note.ui-draggable-dragging {
+    border: 2px solid;
+    border-style: dotted;
+}
+
+
+.ui-widget {
+    font-size: smaller;
+}
+
+
+.sticky-note-title {
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+.sticky-note-body {
+    font-size: smaller;
+}
+
+#sticky-note-properties {
+    color: #000;
+    background-color: #FFF;
+}

@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>Sticky Notes</title>
+<link rel="stylesheet" type="text/css" href="/assets/css/smoothness/jquery-ui.custom.css">
+<link rel="stylesheet" type="text/css" href="/apps/notes/stickynotes.css">
+<script type="text/javascript" src="/assets/js/jquery.min.js"></script>
+<script type="text/javascript" src="/assets/js/jquery-ui.custom.min.js"></script>
+<script type="text/javascript" src="/assets/js/jquery-json.min.js"></script>
+<script type="text/javascript" src="/apps/notes/stickynotes.js"></script>
+</head>
+<body>
+<div class="sticky-wall">
+<h1>Sticky Notes</h1><br>
+
+<div id="sticky-notepad-tray">New Note</div>
+
+<!-- Trash can images from http://www.softicons.com/free-icons --> 
+<div id="trash-can"><img src="/apps/notes/trash_full.png"></div>
+
+<div id="sticky-note-form" title="Sticky Note Properties">
+	<form>
+	<fieldset>
+		<label for="note-form-title">Title</label>
+		<input size="35" type="text" name="note-form-title" id="note-form-title" class="note-form-editbox text ui-widget-content ui-corner-all"></input>
+        <br>
+		<textarea cols="60" rows="18" name="note-form-text" id="note-form-text" value="" class="note-form-editbox text ui-widget-content ui-corner-all"></textarea>
+	</fieldset>
+	</form>
+</div>
+</div>
+</body>
+</html>

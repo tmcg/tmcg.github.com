@@ -1,0 +1,27 @@
+
+body {
+    height: 100%;
+    color: #FFFFFF;
+    font-family: Tahoma,Sans-Serif;
+    background-color: #000000;
+}
+
+#snakeboardHolder {
+    width: 600px;
+    height: 600px;
+    margin: auto;
+}
+
+#snakeboard {
+    display: block;
+    margin: auto;
+    width:100%;
+    height:100%;
+    
+    background-color: #663366; 
+}
+
+#attribution {
+    font-size: smaller;
+}
+
