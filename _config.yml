@@ -1,4 +1,9 @@
 title: Tony McGee
+
+author:
+  name: Tony McGee
+
+exclude: _templates/
 server: true
-auto: true
 server_port: 8890
+auto: true

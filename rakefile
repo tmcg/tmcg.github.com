@@ -1,0 +1,41 @@
+ 
+desc 'Create a new post. args: title, future (# of days), slug'
+# rake newpost title="New Post Title Here" future=0 slug="new-post-slug-here" layout="default"
+task :newpost do
+  require 'rubygems'
+  require 'chronic'
+  
+  title = ENV["title"] || "New Post Title"
+  layout = ENV["layout"] || "default"
+  future = ENV["future"] || 0
+  slug = ENV["slug"] || title
+  slug = slug.gsub(' ','-').downcase
+ 
+  if future.to_i < 3
+    TARGET_DIR = "_posts"
+  else
+    TARGET_DIR = "_drafts"
+  end
+ 
+  if future.to_i.zero?
+    filename = "#{Time.new.strftime('%Y-%m-%d')}-#{slug}.md"
+  else
+    stamp = Chronic.parse("in #{future} days").strftime('%Y-%m-%d')
+    filename = "#{stamp}-#{slug}.md"
+  end
+  path = File.join(TARGET_DIR, filename)
+  post = <<-HTML
+--- 
+layout: POST_LAYOUT
+title: "POST_TITLE"
+date: POST_DATE
+---
+ 
+HTML
+  post.gsub!('POST_TITLE', title).gsub!('POST_DATE', Time.new.to_s).gsub!('POST_LAYOUT', layout)
+  File.open(path, 'w') do |file|
+    file.puts post
+  end
+  puts "New post generated in #{path}"
+  system "gvim #{path}"
+end
