@@ -35,7 +35,7 @@ Features:
 - CSS3 transforms & box shadows to jazz up the realism a little
 - Draggables & Dialog boxes use [jQuery UI](http://www.jqueryui.com)
 
-This one's pretty simple but there's also <a href="/apps/notes/stickynotes_collab.zip">a version that supports collaborative editing</a> by talking to a Google App engine hosted service to mediate between clients.
+This one's pretty simple but there's also <a href="/apps/notes/stickynotes_collab.zip">a version that supports collaborative editing</a> by talking to a Python listen server that mediate between clients.
 
 <a href="/apps/notes" class="btn btn-primary" type="button">Open Sticky Notes</a>
 
