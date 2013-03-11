@@ -6,7 +6,7 @@ task :newpost do
   require 'chronic'
   
   title = ENV["title"] || "New Post Title"
-  layout = ENV["layout"] || "default"
+  layout = ENV["layout"] || "post"
   future = ENV["future"] || 0
   slug = ENV["slug"] || title
   slug = slug.gsub(' ','-').downcase
