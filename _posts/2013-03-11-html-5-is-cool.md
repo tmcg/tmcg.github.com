@@ -39,4 +39,3 @@ This one's pretty simple but there's also <a href="/apps/notes/stickynotes_colla
 
 <a href="/apps/notes" class="btn btn-primary" type="button">Open Sticky Notes</a>
 
----
