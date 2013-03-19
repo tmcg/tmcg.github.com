@@ -22,7 +22,7 @@ Features:
 - Web Audio API
 - Main loop uses [jQuery timer](https://github.com/jchavannes/jquery-timer)
 
-<a href="/apps/snake" class="btn btn-primary" type="button">Play Snake</a> 
+<a href="/apps/snake" class="btn btn-primary">Play Snake</a> 
 
 ---
 ### Sticky Notes
@@ -37,5 +37,5 @@ Features:
 
 This one's pretty simple but there's also <a href="/apps/notes/stickynotes_collab.zip">a version that supports collaborative editing</a> by talking to a Python listen server that mediates between clients.
 
-<a href="/apps/notes" class="btn btn-primary" type="button">Open Sticky Notes</a>
+<a href="/apps/notes" class="btn btn-primary">Open Sticky Notes</a>
 
