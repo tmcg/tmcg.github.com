@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: "HTML 5 Is Cool"
-date: 2013-03-11 20:52:47 +1000
+date: 2013-03-11T20:52+10:00
 ---
 
 

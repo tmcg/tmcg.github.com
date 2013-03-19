@@ -32,7 +32,7 @@ date: POST_DATE
 ---
  
 HTML
-  post.gsub!('POST_TITLE', title).gsub!('POST_DATE', Time.new.to_s).gsub!('POST_LAYOUT', layout)
+  post.gsub!('POST_TITLE', title).gsub!('POST_DATE', Time.new.strftime("%Y-%m-%dT%H:%M%:z")).gsub!('POST_LAYOUT', layout)
   File.open(path, 'w') do |file|
     file.puts post
   end

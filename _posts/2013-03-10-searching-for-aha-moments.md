@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Searching For Aha Moments
+date: 2013-03-10T21:09+10:00
 ---
 Some minor prodding recently from former colleague and all round awesome software developer [Mehdi Khalili](http://www.mehdi-khalili.com/) on twitter inspired me to start blogging. I've read much enlightening tech writing over the years so this one will allow me to share some stories as well. 
 
