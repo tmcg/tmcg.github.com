@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: "Date Handling In SQL Server"
-date: 2013-03-21T00:34+10:00
+date: 2013-03-20T23:34+10:00
 ---
 
 My daily tasks often involve designing reports and providing business users with requested report data via ad-hoc queries. This means getting well acquainted with date handling in Microsoft SQL Server.
