@@ -5,7 +5,6 @@ author:
   name: Tony McGee
   email: tmcgee.au@gmail.com (Tony McGee)
 
-exclude: _templates/
-server: true
-server_port: 8890
-auto: true
+exclude: [_templates/]
+permalink: /:year/:month/:day/:title 
+port: 8890
