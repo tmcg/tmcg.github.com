@@ -8,3 +8,4 @@ author:
 exclude: [_templates/]
 permalink: /:year/:month/:day/:title 
 port: 8890
+highlighter: rouge
