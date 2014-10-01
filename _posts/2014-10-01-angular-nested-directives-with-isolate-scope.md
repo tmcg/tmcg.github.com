@@ -99,9 +99,9 @@ In my case it appears that when the DOM fragment is recreated the transcluded in
 
 Contrast this behaviour with the ng-show directive, which uses CSS to show or hide a portion of the DOM depending on the expression provided. 
 The ng-show behaviour more closely resembles jQuery's $('.elem').show() and .hide() functions.
-The visible/hidden elements remain within the DOM, so the inner directive expression appears to be evaluated within the controller scope.
+Visible or hidden elements remain within the DOM, so the inner directive expression appears to be evaluated within the controller scope.
 
-There's a couple of ways to get the correct behaviour I'm looking for.
+There are a few different ways to get the correct behaviour I'm looking for.
 
 #### 1. Move the ng-if to the view markup
 ([Code](http://jsfiddle.net/aenpL8fv/))
