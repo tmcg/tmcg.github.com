@@ -8,5 +8,5 @@ author:
 exclude: [_templates/]
 permalink: /:year/:month/:title
 port: 8890
-highlighter: rouge
+highlighter: pygments
 markdown: kramdown
