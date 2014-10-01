@@ -27,7 +27,7 @@ HTML
     <button ng-click="vm.isEnabled = !vm.isEnabled">Toggle</button>
     <br/>
 
-    Hi, {% raw %}{{vm.name1}}{% endraw %}!
+    Hi, {{ "{{vm.name1"}}}}!
     <div outer-directive data-model="vm">
         <span inner-directive data-model="vm"></span>
     </div>
@@ -65,7 +65,7 @@ app.directive('innerDirective', function() {
             vm_i: '=model'
         },
         transclude: true,
-        template: "Hi, {% raw %}{{vm_i.name2}}{% endraw %}!"
+        template: "Hi, {{"{{vm_i.name2"}}}}!"
     }
 });
 
