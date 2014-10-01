@@ -6,7 +6,7 @@ author:
   email: tmcgee.au@gmail.com (Tony McGee)
 
 exclude: [_templates/]
-permalink: /:year/:month/:day/:title 
+permalink: /:year/:month/:title
 port: 8890
 highlighter: rouge
 markdown: kramdown
