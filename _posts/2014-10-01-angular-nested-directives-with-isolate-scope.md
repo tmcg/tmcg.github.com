@@ -2,17 +2,15 @@
 layout: post
 title: "AngularJS Nested Directives with Isolate Scope"
 date: 2014-10-01T23:00+10:00
+icon: "/assets/img/angularjs-80x80.png"
 ---
 
-### Learning Angular
-
-<img src="/assets/img/angularjs.png" alt="AngularJS">
-
+<img src="/assets/img/angularjs.png" alt="AngularJS" class="pull-right hidden-xs">
 I've been playing around a bit with AngularJS lately, of which the learning curve has been accurately described as <a href="http://www.bennadel.com/blog/2439-my-experience-with-angularjs-the-super-heroic-javascript-mvw-framework.htm">an emotional roller coaster</a>.
 
 I came across an issue with nested directives that <a href="http://stackoverflow.com/questions/22296084/directives-isolated-scope-variables-are-undefined-if-it-is-wrapped-in-a-directi">others have faced as well</a>. 
+<!--more-->
 This particular Stack Overflow question is still open but around six months old so I'm guessing it's probably been abandoned at this point.
-
 -----
 
 ### The Goal

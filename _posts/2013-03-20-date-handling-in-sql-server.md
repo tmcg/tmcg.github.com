@@ -2,10 +2,11 @@
 layout: post
 title: "Date Handling In SQL Server"
 date: 2013-03-20T23:34+10:00
+icon: "/assets/img/sqlserver-80x80.png"
 ---
 
 My daily tasks often involve designing reports and providing business users with requested report data via ad-hoc queries. This means getting well acquainted with date handling in Microsoft SQL Server.
-
+<!--more-->
 Below is a list of some common date handling tips for SQL Server queries. Many of these tips are explained in greater detail in [The Ultimate Guide to the DateTime Data Types](http://www.karaszi.com/sqlserver/info_datetime.asp). That guide also explains the best ways to represent literal date values to avoid problems with regional settings and why to avoid using BETWEEN in date range queries.
 
 ### Date Truncation

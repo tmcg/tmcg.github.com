@@ -2,10 +2,11 @@
 layout: post
 title: "PowerShell Tricks - Starting Without a Console Window"
 date: 2013-12-04T21:10+10:00
+icon: "/assets/img/powershell-80x80.png"
 ---
 
 Running an unattended PowerShell script or command on a recurring schedule is a technique that can be quite useful. The task might involve capturing some performance data, sending an alert, or cleaning up some leftover files.
-
+<!--more-->
 Once a script is written, it's easy enough to set up a scheduled task and pass it to PowerShell.exe with the -WindowStyle Hidden and -File parameters. The problem with this method is that the console window starts up with a small flash that can be disruptive/annoying if the computer is in use at the time.
  
 Python on Windows solves this problem by having two separate executables (python.exe and pythonw.exe). The latter starts a Python instance that suppresses the console window, running the code in the background.

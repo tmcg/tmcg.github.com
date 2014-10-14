@@ -4,7 +4,7 @@ title: Searching For Aha Moments
 date: 2013-03-10T21:09+10:00
 ---
 Some minor prodding recently from former colleague and all round awesome software developer [Mehdi Khalili](http://www.mehdi-khalili.com/) on twitter inspired me to start blogging. I've read much enlightening tech writing over the years so this one will allow me to share some stories as well. 
-
+<!--more-->
 By way of introduction, I'm a SQL guy, but I haven't always been.
 
 I can clearly remember all the way back to when I first saw how strange this S-Q-L language looked and how it was nothing like the procedural languages I'd been introduced to previously. There were no loops, no ifs, a collection of funny uppercase words that caused data to appear (or not, depending on whether your query was broken!). 

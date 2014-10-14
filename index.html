@@ -1,13 +1,16 @@
 ---
 layout: default
 ---
-
-<div class="row">
-  <ul class="unstyled">
-  {% for post in site.posts %}
-      <li class="extra-pad"><span>{{ post.date | date_to_long_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
-  {% endfor %}
-  </ul>
-</div>
-
+{% for post in site.posts %}
+  <article class="index-post">
+    <div class="index-post-icon hidden-xs pull-left">
+      <img src="{% if post.icon %}{{ post.icon }}{% else %}/assets/img/note-80x80.png{% endif %}">
+    </div>
+    <div class="index-post-content">
+      <a href="{{ BASE_PATH }}{{ post.url }}"><h3>{{ post.title }}</h3></a>
+      <p><span>{{ post.date | date_to_long_string }}</span></p>
+      <p>{{ post.content | split:"<!--more-->" | first | strip_html }}</p>
+    </div>
+  </article>
+{% endfor %}
 

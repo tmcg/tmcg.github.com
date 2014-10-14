@@ -2,10 +2,11 @@
 layout: post
 title: "Powershell Profile Snippets"
 date: 2013-11-30T21:45+10:00
+icon: "/assets/img/powershell-80x80.png"
 ---
 
 I have an admission to make - I've been a command line junkie for a long time now.
-
+<!--more-->
 When PowerShell first came along I had a healthy skepticism about how much care and feeding it would enjoy in the Windows GUI landscape. I said a couple of things to myself:
 
 - "I'll just give it try for a month or two."

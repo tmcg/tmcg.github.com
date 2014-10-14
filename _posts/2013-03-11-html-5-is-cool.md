@@ -2,11 +2,11 @@
 layout: post
 title: "HTML 5 Is Cool"
 date: 2013-03-11T20:52+10:00
+icon: "/assets/img/html5-80x80.png"
 ---
 
-
 Last year I took part in an interesting project called '50 Apps in 50 Weeks' to both sharpen the saw and become exposed to different platforms and languages.
-
+<!--more-->
 As it turns out a non-trivial application in unfamiliar languages each week on top of other commitments is a fairly brisk pace. Unfortunately neither I nor even the project itself ended up making it to the end of 50 weeks but it was definitely worth it to play around with JavaScript and an introduction to the new features of HTML5.
 
 Here's a couple of the apps that I implemented during that time that I'm pretty happy with and now I have a chance to show off. Both are 100% client side, maximise your browser window for best effect. Enjoy!

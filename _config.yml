@@ -10,3 +10,4 @@ permalink: /:year/:month/:title
 port: 8890
 highlighter: pygments
 markdown: kramdown
+excerptseparator: <!--more-->
