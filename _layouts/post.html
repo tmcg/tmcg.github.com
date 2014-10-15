@@ -1,11 +1,34 @@
 ---
 layout: default
 ---
+{% assign tags_content = '' %}
+{% if page.tags.size > 0 %}
+    {% capture tags_glyph %}glyphicon-tag{% if page.tags.size > 1 %}s{% endif %}{% endcapture %}
+    {% capture tags_content %}<i class="glyphicon {{ tags_glyph }}"></i> {% endcapture %}
+    {% for p_tag in page.tags %}
+        {% assign tag_sep = ',' %}
+        {% if forloop.last %}
+          {% assign tag_sep = '' %}
+        {% endif %}
+        {% for d_tag in site.data.tags %}
+            {% if d_tag.slug == p_tag %}
+                {% capture tags_content %}{{ tags_content }}&nbsp;<a href="/tag/{{ d_tag.slug }}">{{ d_tag.name }}</a>{{ tag_sep }}{% endcapture %}
+            {% endif %}
+        {% endfor %}
+    {% endfor %}
+{% endif %}
+
 <article class="post">
   <h2>{{ page.title }}</h2>
   <p><small>{{ page.date | date_to_long_string }}</small></p>
   {{ content }}
 
+  {% unless tags_content == '' %}
+    <hr>
+    <p id="post-tags"><small>{{ tags_content }}</small></p>
+  {% endunless %}
   <hr>
   {% include disqus.html %}
 </article>
+
+

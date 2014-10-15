@@ -3,6 +3,7 @@ layout: post
 title: "Powershell Profile Snippets"
 date: 2013-11-30T21:45+10:00
 icon: "/assets/img/powershell-80x80.png"
+tags: [powershell]
 ---
 
 I have an admission to make - I've been a command line junkie for a long time now.

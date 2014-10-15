@@ -1,0 +1,27 @@
+---
+layout: default
+---
+<h3>Tagged: {{ page.tag }}</h3>
+<div>
+  <hr>
+    {% if site.tags[page.tag] %}
+        {% for post in site.tags[page.tag] %}
+  <article class="index-post">
+    <div class="index-post-icon hidden-xs pull-left">
+      <img src="{% if post.icon %}{{ post.icon }}{% else %}/assets/img/note-80x80.png{% endif %}">
+    </div>
+    <div class="index-post-content">
+      <a href="{{ BASE_PATH }}{{ post.url }}"><h3>{{ post.title }}</h3></a>
+      <p><span>{{ post.date | date_to_long_string }}</span></p>
+      <p>{{ post.content | split:"<!--more-->" | first | strip_html }}</p>
+    </div>
+  </article>
+        {% endfor %}
+    {% else %}
+        <p>There are no posts for this tag.</p>
+    {% endif %}
+</div>
+
+
+
+

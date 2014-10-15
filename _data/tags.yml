@@ -1,0 +1,14 @@
+---
+- slug: powershell
+  name: PowerShell
+- slug: html5
+  name: HTML5
+- slug: javascript
+  name: Javascript
+- slug: angularjs
+  name: AngularJS
+- slug: sql
+  name: SQL
+- slug: sqlserver
+  name: SQL Server
+---
